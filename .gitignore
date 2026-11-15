@@ -1,0 +1,8 @@
+.build/
+*.exe
+*.pdb
+*.obj
+*.o
+*.rdi
+.DS_Store
+example/*.png
