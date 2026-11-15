@@ -10,8 +10,8 @@ Copy this folder into your modules folder as `Nanosvg` and `#import "Nanosvg";`.
 
 The library is statically linked.
 
-Prebuilt bindings and the static library are included for Windows x64.
-On Linux and macOS, run `jai generate.jai` to get the bindings and static library, but this hasn't been tested yet.
+Prebuilt bindings and the static library are included for Windows x64 and Linux x64.
+On macOS, run `jai generate.jai` to get the bindings and static library, but this hasn't been tested yet.
 
 If you don't plan to run `generate.jai` you can delete it and the `include` folder.
 
@@ -45,7 +45,7 @@ example/example
 jai generate.jai
 ```
 
-This compiles `include/nanosvg.c` into a static library and generates statically linked bindings for the current platform into `bindings/<os>/`. On Windows it needs Visual Studio (Build Tools) installed. On Linux and macOS it uses the system C compiler.
+This compiles `include/nanosvg.c` into a static library and generates statically linked bindings for the current platform into `bindings/<os>/`. On Windows it needs Visual Studio (Build Tools) installed. On Linux and macOS it needs `clang` on your `PATH`.
 
 ## License
 

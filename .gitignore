@@ -6,3 +6,4 @@
 *.rdi
 .DS_Store
 example/*.png
+example/example
